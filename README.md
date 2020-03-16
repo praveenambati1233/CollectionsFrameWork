@@ -58,12 +58,11 @@ public int compareTo(Employee o) {
  }
 ```
 
-*You may be wondering why I didn't write that logic? Because getNameis  string, I have called the compareTo() method of string class, which does exactly the same.
+> You may be wondering why I didn't write that logic? Because getNameis  string, I have called the compareTo() method of string class, which does exactly the same
 
-However if the things we are comparing are of other type such as int then you can write the logic like this:
+> However if the things we are comparing are of other type such as int then you can write the logic like this:
 Lets say object of Employee class is (empId, empName, empAge) and we want to sort the objects by empAge.
 
-*
 
 ```java
 public int compareTo(Employee e){  
