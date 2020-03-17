@@ -169,8 +169,26 @@ public class TnInfoComparatorTest {
 }
 ```
 
+- Requirement to sort ArrayList objects in accordance with more than one fields like firstly sort, according to student name and secondly sort according to student age.
 
-Difference : 
+```java
+public class CustomerSortingComparator  implements Comparator<Student>{
+
+	@Override
+	public int compare(Student customer1, Student customer2) {
+
+		return Comparator.comparing(Student :: getName)
+				.thenComparing(Student:: getAge)
+				.compare(customer1, customer2);
+	}
+}
+```
+
+
+
+
+
+aDifference : 
 
 Another difference between Comparator and Comparable is Comparator is used to impose total ordering while Comparable is used to impose natural ordering .
 
