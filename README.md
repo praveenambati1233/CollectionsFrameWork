@@ -185,11 +185,43 @@ public class CustomerSortingComparator  implements Comparator<Student>{
 ```
 
 
+sorting Map `<k,v>  </k,v> ` since Comparator Interface is not implemented in HashMap
+
+```java
+public class MapUsingSort {
+
+	public static void main(String[] args) {
+
+		Map<Integer, String> map = new HashMap<>();
+		map.put(4, "ambati");
+		map.put(5, "praveen");
+		map.put(1, "craveen");
+		map.put(3, "praveen");
+		map.put(2, "braveen");
+
+		// store map key, value in ArrayList
+
+		List<Entry<Integer, String>> entries = new ArrayList<Entry<Integer, String>>(map.entrySet());
+
+		Collections.sort(entries, new Comparator<Entry<Integer, String>>() {
+
+			public int compare(Entry<Integer, String> key1, Entry<Integer, String> key2) {
+				return key1.getValue().compareTo(key2.getValue());
+			}
+		});
+
+		entries.forEach(e -> System.out.println(e));
+	}
+
+}
+
+```
 
 
 
-aDifference : 
+Difference : 
 
 Another difference between Comparator and Comparable is Comparator is used to impose total ordering while Comparable is used to impose natural ordering .
+
 
 
