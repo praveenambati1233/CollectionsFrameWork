@@ -151,5 +151,21 @@ public class NewRecords {
 
 - **Convert keys in a Map to an array or a list**
 
+     ```java
+
+// convert keys to array
+		
+		String[] stringArray = map.keySet().toArray(new String[map.keySet().size()]);
+		for (String string : stringArray) {
+			System.out.println(string);
+		}
+
+		// convert keys to list
+		
+		List<String> list = new ArrayList<>(map.keySet());
+		list.forEach(e -> System.out.println(e));
+
+```
+
 
 
