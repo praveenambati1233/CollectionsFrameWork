@@ -17,21 +17,25 @@ Theoretical and Practical explanation of all the topics in CFW.
 **Accessing keys and modifying their associated value in a HashMap
 The example below shows:**
 
-- How to check if a HashMap is empty | isEmpty()
-- How to find the size of a HashMap | size()
-- How to check if a given key exists in a HashMap | containsKey()
-- How to check if a given value exists in a HashMap | containsValue()
-- How to get the value associated with a given key in the HashMap | get()
-- How to modify the value associated with a given key in the HashMap | put()
-- Remove a key from a HashMap | remove(Object key)
-- Remove a key from a HashMap only if it is associated with a given value | remove(Object key, Object value)
-- entrySet  (prints k, v ) , entryKey (prints only keys ),  values ( print only key values)
+- How to check if a HashMap is empty | **isEmpty()**
+- How to find the size of a HashMap | **size()**
+- How to check if a given key exists in a HashMap | **containsKey()**
+- How to check if a given value exists in a HashMap | **containsValue()**
+- How to get the value associated with a given key in the HashMap | **get()**
+- How to modify the value associated with a given key in the HashMap | **put()**
+- Remove a key from a HashMap | **remove(Object key)**
+- Remove a key from a HashMap only if it is associated with a given value | **remove(Object key, Object value)**
+
+> Primary method :
+- entryKey = map.entrySet() (prints k, v )  
+   entryKey.getKey()             (prints only keys )
+   entrySet.getValue()          ( prints only values )
+   entrySet.values                 ( print all values)
+   entrySet.getKey().name() ( prints  key name)
+   
+   
 
 **Iterating over a HashMap**
-
-
-
-
 
 **Examples :**
 
@@ -143,6 +147,9 @@ public class NewRecords {
 ```
 
 
-`**Get values from List<Map<String, String>>**`
+- **Get keys/values from List of maps**
+
+- **Convert keys in a Map to an array or a list**
+
 
 
